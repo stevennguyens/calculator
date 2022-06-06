@@ -85,14 +85,14 @@ function appendOperator(op) {
         operator = op.replace(/\s/g,'');
         firstOperand = total.toString();
         displayTop.textContent = firstOperand.concat(' ', operator);
-        displayBot.textContent = '0';
+        reset = true;
         isDecimal = false;
         isNegative = false;
     } else {
         firstOperand = displayBot.textContent;
         operator = op.replace(/\s/g,'');
         displayTop.textContent = firstOperand.concat(' ', operator);
-        displayBot.textContent = '0';
+        reset = true;
         isDecimal = false;
         isNegative = false;
     }
