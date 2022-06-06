@@ -25,6 +25,7 @@ let secondOperand = '';
 let operator = null;
 let isDecimal = false;
 let isNegative = false;
+let reset = false;
 
 const digitBtns = document.querySelectorAll('.digit');
 const operatorBtns = document.querySelectorAll('.operator');
@@ -69,10 +70,11 @@ equalsBtn.addEventListener('click', () => {
 })
 
 function appendDigit(text) {
-    if (displayBot.textContent !== '0') {
+    if (displayBot.textContent !== '0' && !reset) {
         displayBot.textContent += text;
     } else {
         displayBot.textContent = text;
+        reset = false;
     }
 }
 
@@ -147,6 +149,7 @@ function equals() {
         firstOperand = displayBot.textContent;
         operator = null;
         secondOperand = '';
+        reset = true;
     }
 }
 
