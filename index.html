@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="calculator-container">
+                <div class="display">
+                    <div class="display-top"></div>
+                    <div class="display-bot">0</div>
+                </div>
+                <div class="container-one">
+                    <div class="digits">
+                        <div class="digits-row">
+                            <button class="non-zero digit">7</button>
+                            <button class="non-zero digit">8</button>
+                            <button class="non-zero digit">9</button>
+                        </div>
+                        <div class="digits-row">
+                            <button class="non-zero digit">4</button>
+                            <button class="non-zero digit">5</button>
+                            <button class="non-zero digit">6</button>
+                        </div>
+                        <div class="digits-row">
+                            <button class="non-zero digit">1</button>
+                            <button class="non-zero digit">2</button>
+                            <button class="non-zero digit">3</button>
+                        </div>
+                        <div class="digits-row">
+                            <button class="zero digit">0</button>
+                            <button class="decimal">.</button>
+                            <button class="neg">(-)</button>
+                        </div>
+                    </div>
+                    <div class="operators">
+                        <div class="operator add">
+                            <button class="add-btn">+</button>
+                        </div>
+                        <div class="operator sub">
+                            <button class="sub-btn">-</button>
+                        </div>
+                        <div class="operator mult">
+                            <button class="mult-btn">*</button>
+                        </div>
+                        <div class="operator div">
+                            <button class="div-btn">÷</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-two">
+                    <button class="del-btn">del</button>
+                    <button class="clear-btn">clear</button>
+                    <button class="equal-btn">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="app.js" defer></script>
+    </body>
+</html>

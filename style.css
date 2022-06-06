@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Archivo', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+/* calculator */
+.calculator {
+    background-color: rgb(174, 181, 205);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px;
+}
+
+/* calculator container */
+.calculator-container {
+    background: #f7fbff;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 100px 250px 50px;
+}
+
+/* display */
+.display {
+    background: rgb(226,240,255);
+    background: linear-gradient(90deg, rgba(226,240,255,1) 0%, rgba(214,228,242,1) 100%);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .display-bot {
+    font-size: 1.6rem;
+}
+/* container one */
+
+.container-one {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+/* digits */
+.digits {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.digits-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+} 
+
+.digits button {
+    color: #171E2B;
+    background-color: rgb(238, 237, 237);
+    border-style: none;
+    border-radius: .7rem;
+    font-size: 1.8rem;
+    padding: 5px 10px;
+}
+
+/* operators */
+.operators {
+    display: grid;
+    gap: 10px;
+}
+
+.operators div {
+    display: grid;
+
+}
+.operators button {
+    color: #171E2B;
+    background-color: #f99687;
+    border-style: none;
+    border-radius: .7rem;
+    font-size: 1.8rem;
+}
+
+/* container two */
+.container-two {
+    display: grid;
+    grid-template-columns: 100px 100px 105px;
+    gap: 10px;
+}
+.container-two button {
+    color: #171E2B;
+    background-color: #FB8574;
+    border-style: none;
+    border-radius: .7rem;
+    font-size: 1.3rem; 
+}
+
+/* button */
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(.95);
+}
+
